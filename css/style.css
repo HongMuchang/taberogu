@@ -1,0 +1,310 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.none {
+  display: none;
+  /* ボックスごと非表示 */
+}
+.hidden {
+  text-indent: 100%;
+  white-space: nowrap; /* 改行せずに表示 */
+  overflow: hidden;
+  /* ボックスの中身が不可視 */
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+/*headerエリアーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+header {
+  width: 100%;
+  height: 60vh;
+  color: white;
+  /*背景画像一覧*/
+  background-image: url(../layout1/images/photo-1505826759037-406b40feb4cd.jpeg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+/*----------h_top----------*/
+#h_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/*ロゴ部分*/
+#h_logo {
+  width: 20%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  padding: 2%;
+}
+/*ヘッターのナビゲーション親*/
+header nav {
+  width: 55%;
+}
+/*ヘッターのナビゲーション*/
+#h_menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 0 15% 0;
+}
+#h_menu li {
+  font-size: 12px;
+  border: solid 1px white;
+}
+#h_menu li a {
+  color: white;
+}
+/*----------h_main----------*/
+#h_main {
+  width: 100%;
+  padding-bottom: 2%;
+}
+#h_main p {
+  width: 50%;
+  text-align: center;
+  font-family: "Kosugi Maru", sans-serif;
+}
+#h_mf {
+  font-size: 30px;
+}
+.h_ms {
+  font-size: 50px;
+}
+/*form*/
+#box {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 20vh;
+  padding: 4%;
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 8px gray;
+  border-radius: 5px;
+}
+form {
+  font-size: 30px;
+}
+
+form input {
+  font-size: 15px;
+}
+/*------------------------mainエリア----------------------------*/
+main {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#left {
+  width: 70%;
+}
+#right {
+  width: 25%;
+  padding: 5% 3%; /*観覧履歴の上padding*/
+}
+#main_title {
+  width: 25%;
+  text-align: center;
+}
+/*地域の親*/
+#area {
+  width: 100%;
+  padding: 3% 0%;
+}
+/*地域のul*/
+#area ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/*liのclass*/
+.area_list {
+  box-shadow: 0 0 8px gray;
+  margin: 1%;
+  display: flex;
+  text-align: center;
+}
+/*全ての地域のaタグ*/
+#area a {
+  display: block;
+  height: 66px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.map:hover {
+  color: orange;
+  opacity: 0.7;
+}
+/*各地域毎のくくりid*/
+#tokyo_img {
+  background-image: url(../layout1/images/tokyo.png);
+}
+#kanagawa_img {
+  background-image: url(../layout1/images/kanagawa.png);
+}
+#aichi_img {
+  background-image: url(../layout1/images/aichi.jpg);
+}
+#osaka_img {
+  background-image: url(../layout1/images/osaka.png);
+}
+#kyouto_img {
+  background-image: url(../layout1/images/kyoto.png);
+}
+#fukuoka_img {
+  background-image: url(../layout1/images/fukuoka.png);
+}
+/*各地域毎のくくりclass  一括サイズ変更など*/
+.map {
+  width: 250px;
+  color: black;
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  padding-top: 20px;
+}
+/*関東、関西、中部、四国などなど*/
+#Concrete dl {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#Concrete dt {
+  padding-top: 8%;
+}
+.Concrete_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#Concrete_list dd {
+  padding-right: 10px;
+}
+#Concrete_list dd a {
+  color: teal;
+}
+/*料理のジャンル*/
+#genre {
+  width: 30%;
+  padding: 5% 3%;
+}
+#genre_list {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-left: 6%;
+}
+.food {
+  display: block;
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+  color: white;
+  padding-top: 50%;
+  text-align: center;
+  font-family: "Kosugi Maru", sans-serif;
+}
+.food:hover {
+  opacity: 0.7;
+}
+#food1 {
+  background-image: url(../layout1/images/niku.png);
+}
+#food2 {
+  background-image: url(../layout1/images/susi.png);
+}
+#food3 {
+  background-image: url(../layout1/images/sake.png);
+}
+#food4 {
+  background-image: url(../layout1/images/itarian.png);
+}
+#food5 {
+  background-image: url(../layout1/images/nudol.png);
+}
+#food6 {
+  background-image: url(../layout1/images/cafe.png);
+}
+/*料理のカテゴリー一覧*/
+#genre_category {
+  width: 100%;
+}
+#genre_nav {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#genre_category li {
+  border: 0.5px solid gainsboro;
+  font-size: 14px;
+  margin: 1%;
+  border-radius: 3px;
+}
+
+#genre_nav li a {
+  color: black;
+}
+/*特集*/
+#special {
+  width: 25%;
+  padding: 3%;
+}
+#history {
+  /*閲覧履歴全てくくり*/
+  width: 100%;
+  height: 50vh;
+  background-color: whitesmoke;
+  border: 1px black solid;
+  box-shadow: 0px 0px 5px 5px #bbb inset;
+}
+#history h2 {
+  /*閲覧履歴はありませんのくくり*/
+  font-size: 15px;
+  padding-left: 10%;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 10%;
+}
+#history_content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border: 1px dotted gray;
+}
+#history p {
+  margin: 20px;
+}
+#history_in h2 {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10% 10% 0% 10%;
+}
+#history_in p {
+  font-size: 13px;
+}
+#bbb {
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+#aaa {
+  background-color: greenyellow;
+  color: black;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+#history_title {
+  padding-top: 5%;
+}
